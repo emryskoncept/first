@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* background-color: brown; */
+
+        }
+        .box video{
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+
+       }
+        .overlay{
+            position: absolute;
+            /* top: 50%; */
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(11, 3, 122, 0.633);
+            color:rgb(250, 249, 249);
+            box-sizing:border-box;
+        }
+        .overlay h1, p{
+            font-size: 2rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 200;
+            margin-bottom: 2rem;
+            /* border: 5px solid green; */
+            margin: 0px 50px 0px 50px;
+            text-align: center;
+        }
+
+        ul{
+            background-color: rgb(7, 3, 123);
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 2px solid rgb(2, 3, 86);
+            height: 50px;
+            margin-bottom: -10px;
+            /* width: 100%; */
+            /* top: 0; */
+        }
+
+        li{
+            justify-content: center;
+            float:inline-start;
+            margin: 5px;
+        
+        }
+        li a{
+            display: block;
+            padding: 10px 12px;
+            color: rgb(255, 255, 255);
+            /* text-align: center; */
+            /* background-color: rgb(202, 169, 125); */
+
+        }
+        li a:hover:not(.active) {
+            background-color: rgb(79, 70, 128);
+            
+        }
+        .active {
+            background-color:rgb(13, 192, 237);
+        }
+        .header{
+            width: 100%;
+            height: 25vh;
+            background-color: rgb(132, 170, 240);
+            /* border: 5px solid red; */
+            margin: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+
+        }
+        .guide{
+            width: 20vw;
+            height: 20vh;
+            margin-top: 20px;
+            /* margin-bottom: 10px; */
+            border: 4px solid red;
+            position: absolute; 
+            display: flex;
+            align-content: center;    
+
+        }
+        img{
+            width: 20vw;
+            height: 20vh;
+            object-fit: cover;
+            /* margin-bottom: 0px; */
+        }
+        .step-1{
+            width: 100%;
+            height: 70vh;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            /* border: 4px solid blue; */
+            margin-top: 10px;
+
+        }
+        p{
+            width: 50%;
+        }
+        img{
+            width: 50%;
+            height: fit-content;
+            margin-bottom: 50px;
+
+        }
+        .staff{
+            width: 100%;
+            height: 50vh;
+            border: 4px solid blue;
+            position: relative;
+        }
+        .s-box{
+            width: 70%;
+            height: 45vh;
+            border: 2px solid green;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+        }
+        .s-box img{
+            width: 35%;
+            height: 45vh;
+        }
+        .s-box h2 p{
+            align-content: center;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="guide">
+            <img src="img/pexels-rdne-6129044.jpg" alt="">
+        </div>
+    </div>
+    <div>
+        <ul>
+            <li><a class="active" href="#home"> Home </a></li>
+            <li><a href="#news"> News </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            <li><a href="#about"> About </a></li>
+        </ul>
+    </div>
+
+    <br>
+    <div class="box">
+        <video autoplay loop muted src="vid/4010941-uhd_3840_2160_25fps.mp4"></video>
+        <div class="overlay"> 
+            <h1> Emrys Media </h1>
+            <p> "The history of public relations is...a history of a battle for what is reality and how people will see and understand reality." - Stuart Ewen</p>
+            <a href="#" class="buttton"> learn more </a>
+        </div>
+    </div>
+
+    <div class="step-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum perferendis harum quo saepe excepturi sapiente sunt vitae. Eum dolorem temporibus maiores. Hic officiis delectus molestias ipsa explicabo aliquid veniam quis saepe, adipisci ipsam voluptatem corrupti debitis quam, excepturi cum enim beatae, nihil fugiat minus natus aperiam aspernatur in reiciendis!</p>
+        <img src="img/pexels-rdne-6129044.jpg" alt="">
+    </div>
+    <br>
+    <div class="staff">
+        <div class="s-box">
+            <img src="img/IMG_9690.jpg" alt="">
+            <h2> Rev. Fr. Innocent Nwalieji Chinedu
+                <p> The Proprietor/ Manager </p>
+            </h2>
+        </div>
+    </div>
+    <br>
+    <div>
+        <h3> Contact us </h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aperiam nemo consequatur officia! Praesentium culpa error asperiores consequuntur distinctio, obcaecati adipisci, at magnam porro architecto doloribus, placeat perferendis dolore iste!
+    </div>
+</body>
+</html>
