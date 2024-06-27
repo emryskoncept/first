@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Testimonial Design </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            height: auto; 
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 5px solid green; */
+        }
+        .video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background-color:#9d6565c0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 800px;
+            height: 500px;
+            background-color: rgb(136, 82, 82);
+            display: flex;
+            flex-direction:row;
+            position: absolute;
+            align-items: center;
+            /* justify-content:space-evenly; */
+            margin: 0px auto;
+       }
+        .sidebox-left {
+            width: 200px;
+            height: 250px;
+            /* border: 3px solid black; */
+            display: flex;
+            /* background-color: blue; */
+            margin-left: 30px;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+        
+        h3 {margin-bottom: 10px;
+        margin-left: 10px;}
+
+        p{margin-left: 10px;}
+
+        }
+        .sidebox-right {
+            width: 700px;
+            height: 250px;
+            /* border: 3px solid black; */
+            display: flex;
+            /* background-color: aquamarine; */
+            margin-left: 30px;
+            margin-right: -100px;
+        }
+
+        .test1 {
+            width: 200px;
+            height: 250px;
+            border: 3px solid rgb(245, 241, 241);
+            background-color: white;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .test2 {
+            width: 200px;
+            height: 250px;
+            border: 3px solid rgb(130, 72, 72);
+            background-color: rgb(254, 253, 253);
+            margin: 10px;
+            /* object-fit: contain; */
+        }
+        .test3 {
+            width: 200px;
+            height: 250px;
+            border: 3px solid rgb(120, 9, 9);
+            background-color: white;
+            margin: 10px;
+            /* object-fit: cover; */
+        }
+        img{
+            width: 200px;
+            height: 125px;
+            border-bottom: 5px solid rgb(155, 158, 155);
+            display: flex;
+            flex-wrap: wrap;
+            object-fit: cover;
+            margin:-2px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Testimonial Design </h1>
+
+    <div class="container">
+        <div class="video"> 
+            <video src="vid/20204266-uhd_3840_2160_25fps.mp4" autoplay loop muted ></video>
+        </div>
+        <div class="overlay"></div>
+        <div class="box">
+            <div class="sidebox-left">
+                <h3> Connect with other members</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis beatae delectus voluptates cum modi omnis?</p>
+            </div>
+            <div class="sidebox-right">
+                <div class="test1">
+                    <img src="img/download.jfif" alt="">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eum?</p>
+                </div>
+                <div class="test2">
+                    <img src="img/download (1).jfif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vel.</p>
+                </div>
+                <div class="test3">
+                    <img src="img/download (2).jfif" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta illum cum dolore laborum, ad maxime.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
